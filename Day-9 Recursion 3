@@ -1,0 +1,43 @@
+Recursive Method for Calculating Factorial
+Function Description
+Complete the factorial function in the editor below. Be sure to use recursion.
+
+factorial has the following paramter:
+
+int n: an integer
+
+
+public class Solution {
+
+    // Complete the factorial function below.
+    static int factorial(int n) {
+      if(n<=1){
+          return 1;
+      }else{
+         int fnm1=factorial(n-1);
+         int fn=n*fnm1;
+         return fn;
+          
+      }
+      
+
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int n = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        int result = factorial(n);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
