@@ -1,3 +1,3 @@
 # Hackerrank-question
-some intresting code of hackerrank question
-#started from hackerrank 30 days of code
+Some intresting code of hackerrank
+#From hackerrank 30 days of code
